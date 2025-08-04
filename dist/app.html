@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        display: inline-block;
+      }
+      .image-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* 中央寄せ（必要に応じて start / space-between） */
+        align-items: center; /* 高さを揃える */
+        gap: 200px; /* 画像間のスペース */
+        padding: 20px;
+      }
+
+      .image-row img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      .bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: #f0f;
+        transition: background-color 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="large grid centered square-grid text-xl">
+      <span>H</span>
+      <span>E</span>
+      <span>L</span>
+      <span>L</span>
+      <span>O</span>
+      <span>&nbsp;</span>
+      <span>W</span>
+      <span>O</span>
+      <span>R</span>
+      <span>L</span>
+      <span>D</span>
+    </h2>
+    <div class="image-row">
+      <img
+        id="image1"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiDZXOmYQwj6D4cM5beEMORXxl9wj1b_j_-Y-MjuhpDg2VroOp7iOfEH12rsgO4eJwpHcwL_XGwk6QmdXhyphenhyphencuNy6VWwE1_oXYnIJFWIQ-Q5uphF5GvVd6lyp5hwhxexTFzQu7IQJcl6fxng/s400/buranko_boy_smile.png"
+      />
+      <img
+        id="image2"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWsvL0brkhZn9zU4BpyeOuPORRguZz4iPTopr4phHynEW0DATC9W5j11fWGDlghx_Eysn_5gGSLuBYybC28GRYzsPZB_qpNjFU8qMGpgL_fEi5iUfZv4GnEn_v-sI80WTqOPbSqrg1-3c/s400/fantasy_dragon.png"
+      />
+    </div>
+    <div class="bg"></div>
+
+    <!-- <div class="medium row">
+      <fieldset class="controls">
+        <button class="button restart">Restart</button>
+      </fieldset>
+    </div> -->
+    <script src="app.js"></script>
+  </body>
+</html>

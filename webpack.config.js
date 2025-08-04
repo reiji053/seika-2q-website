@@ -16,7 +16,6 @@ export default {
     ],
   },
   entry: {
-    main: './src/index.js',
     app: './src/app.js',
   },
   output: {
